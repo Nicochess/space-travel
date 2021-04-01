@@ -83,8 +83,21 @@ body{
     justify-content: center;
 
     padding: 40px 80px;
+
+    background-color: rgb(255, 255, 255);
 }
 
+.gallery__title{
+    margin-left: 5px;
+}
+
+.gallery__title h2{
+    font-size: 30px;
+}
+
+/*Estilização da galeria*/
+
+/*Organização dos grids*/
 .gallery__pics{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -94,13 +107,27 @@ body{
 }
 
 .pics__cell{
-    background-color: black;
     margin: 5px;
+
     color: white;
 
     height: 250px;
+
+    text-transform: lowercase;
+
+    background-color: rgba(255, 255, 255, 0.075) !important;
+    background-blend-mode: overlay;
+
+    cursor: pointer;
+    transition: 1s;
 }
-/*Organização dos grids*/
+
+.pics__cell:hover{
+    transition: 2s ease;
+    background-position: 5px 0px;
+    
+}
+
 .cell-1{
     grid-row: 1;
     grid-column: 1/3;
@@ -140,9 +167,24 @@ body{
 }
 /*Organização dos grids*/
 
+/*Estilizando grids*/
+.pics__cell h3{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.pics__cell p{
+    font-size: 14px;
+    font-weight: 400;
+}
+
 .pics__cell h3,
 .pics__cell p{
     position: relative;
     top: 20px;
     left: 20px;
+
+    display: block;
+    text-shadow: black 2px 2px 0px;
 }
+/*Estilizando grids*/
