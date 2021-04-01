@@ -8,13 +8,28 @@
 
 body{
     font-family: 'Poppins', sans-serif;
+    background-color: rgb(184,184,184);
 }
 
-/*Estilizações header*/
+footer{
+    padding: 10px;
+    text-align: center;
+}
 
+footer a{
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+}
 
+footer a:hover{
+    color: rgb(106, 106, 250);
+}
 
-/*Estilização header*/
+footer a:checked{
+    text-decoration: none;
+    color: white;
+}
 
 
 
