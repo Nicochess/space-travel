@@ -72,6 +72,7 @@
         justify-content: left;
         align-items: unset;
 
+        margin: 0;
         padding: 2rem;
     }
     
@@ -93,6 +94,7 @@
         max-width: 180px;
 
         margin-right: 5px;
+        margin-bottom: 0;
 
         display: flex;
         flex-direction: column;
