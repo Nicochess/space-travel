@@ -1,32 +1,45 @@
 /*Estilização do gráfico*/
 .plans{
     background: rgb(184, 184, 184);
-    padding: 40px 80px;
+    padding: 0;
+}
+
+.plans__top{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    padding: 2em;
+    text-align: center;
 }
 
 .plans__top--title{
-    font-size: 30px;
+    font-size: 1.8rem;
 }
 
 .plans__chart{
     display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-evenly;
-    align-items: flex-end;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
 }
 
 .plans__chart--cell{
 
-    width: 180px;
+    width: 70%;
+    max-width: 400px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
+    margin-bottom: 5%;
     
     background: rgb(255, 196, 0);
 }
 
 .plans__chart--title{
-    font-size: 18px;
+    font-size: 1.2em;
     background-color: orange;
     padding: 10px;
 }
@@ -38,27 +51,91 @@
 }
 /*Montagem do gráfico*/
 .plans__chart--desc{
-    font-size: 12px;
-    padding: 10px;
+    font-size: 1em;
+    padding: 1em;
 }
 
-.chart--cell1{
-    height: 200px;
+.chart--cell1, .chart--cell2,
+.chart--cell3, .chart--cell4,
+.chart--cell5, .chart--cell6{
+    height: 20%;
 }
 
-.chart--cell2{
-    height: 240px;
-}
+@media screen and (min-width: 1024px){
+    .plans{
+        background: rgb(184, 184, 184);
+        padding: 0.5rem 1rem;
+    }
 
-.chart--cell3{
-    height: 280px;
-}
-.chart--cell4{
-    height: 320px;
-}
-.chart--cell5{
-    height: 360px;
-}
-.chart--cell6{
-    height: 400px;
+    .plans__top{
+        text-align: left;
+        justify-content: left;
+        align-items: unset;
+
+        padding: 2rem;
+    }
+    
+    .plans__top--title{
+        font-size: 30px;
+    }
+    
+    .plans__chart{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-evenly;
+        align-items: flex-end;
+
+        height: 100%;
+    }
+    
+    .plans__chart--cell{
+        width: 18%;
+        max-width: 180px;
+
+        margin-right: 5px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        
+        background: rgb(255, 196, 0);
+    }
+    
+    .plans__chart--title{
+        font-size: 18px;
+        background-color: orange;
+        padding: 10px;
+    }
+    
+    .year{
+        display: block;
+        font-size: 26px;
+        font-weight: 700;
+    }
+    /*Montagem do gráfico*/
+    .plans__chart--desc{
+        font-size: 12px;
+        padding: 10px;
+    }
+    
+    .chart--cell1{
+        height: 220px;
+    }
+    
+    .chart--cell2{
+        height: 260px;
+    }
+    
+    .chart--cell3{
+        height: 300px;
+    }
+    .chart--cell4{
+        height: 340px;
+    }
+    .chart--cell5{
+        height: 380px;
+    }
+    .chart--cell6{
+        height: 420px;
+    }
 }
