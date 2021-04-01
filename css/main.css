@@ -71,6 +71,14 @@ body{
     font-weight: 700;
 
     cursor: pointer;
+    transition: .4s;
+}
+
+.header__button:hover{
+    transition: .5s ease-out;
+    background: rgb(145, 143, 143);
+    
+    
 }
 
 /*Estilização header*/
@@ -161,7 +169,7 @@ body{
     grid-row: 3;
     grid-column: 2/4;
 
-    background: url("https://www.gnosticradio.com/wp-content/uploads/2016/05/hexagon_by_neutron_quasar-d80ljbh.png");
+    background: url("https://i.pinimg.com/originals/bc/12/8f/bc128f4225fabb72b7fe615150e1f1b6.jpg");
     background-size: cover;
     background-position: left;
 }
@@ -188,3 +196,69 @@ body{
     text-shadow: black 2px 2px 0px;
 }
 /*Estilizando grids*/
+
+/*Estilização do gráfico*/
+.plans{
+    background: rgb(184, 184, 184);
+    padding: 40px 80px;
+}
+
+.plans__top--title{
+    font-size: 30px;
+}
+
+.plans__chart{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    align-items: flex-end;
+}
+
+.plans__chart--cell{
+
+    width: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+    background: rgb(255, 196, 0);
+}
+
+.plans__chart--title{
+    font-size: 18px;
+    background-color: orange;
+    padding: 10px;
+}
+
+.year{
+    display: block;
+    font-size: 26px;
+    font-weight: 700;
+}
+/*Montagem do gráfico*/
+.plans__chart--desc{
+    font-size: 12px;
+    padding: 10px;
+}
+
+.chart--cell1{
+    height: 200px;
+}
+
+.chart--cell2{
+    height: 240px;
+}
+
+.chart--cell3{
+    height: 280px;
+}
+.chart--cell4{
+    height: 320px;
+}
+.chart--cell5{
+    height: 360px;
+}
+.chart--cell6{
+    height: 400px;
+}
+
