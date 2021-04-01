@@ -123,8 +123,8 @@ body{
 }
 
 .pics__cell:hover{
-    transition: 2s ease;
-    background-position: 5px 0px;
+    transition: 2s ease-in-out;
+    background-position: 0px 5px;
     
 }
 
@@ -161,9 +161,9 @@ body{
     grid-row: 3;
     grid-column: 2/4;
 
-    background: url("https://cdn.iflscience.com/images/154e23fe-390a-56a9-83f0-7f72d1aa13ec/default-1536318053-cover-image.jpg");
+    background: url("https://www.gnosticradio.com/wp-content/uploads/2016/05/hexagon_by_neutron_quasar-d80ljbh.png");
     background-size: cover;
-    background-position: center;
+    background-position: left;
 }
 /*Organização dos grids*/
 
