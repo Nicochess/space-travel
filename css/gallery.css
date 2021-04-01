@@ -133,11 +133,11 @@
         overflow: hidden;
     
         cursor: pointer;
-        transition: .3s ease-in;
+        transition: .6s ease-in;
     }
 
     .pics__cell:hover{
-        transition: .3s ease-in;
+        transition: .6s ease-in;
         background-position: -10px -10px;
     }
 
