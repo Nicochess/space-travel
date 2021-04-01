@@ -127,19 +127,25 @@
     
         text-transform: lowercase;
     
-        background-color: rgba(255, 255, 255, 0.075) !important;
+        background-color: rgba(255, 255, 255, 0.116) !important;
         background-blend-mode: overlay;
 
         overflow: hidden;
     
         cursor: pointer;
+        transition: .3s ease-in;
+    }
+
+    .pics__cell:hover{
+        transition: .3s ease-in;
+        background-position: -10px -10px;
     }
 
     .cell-1, .cell-2,
     .cell-3, .cell-4,
     .cell-5{
         width: auto;
-}
+    }
     
     .cell-1{
         grid-row: 1;
